@@ -1,0 +1,25 @@
+
+ALTER TABLE
+    [Facility]
+ADD
+    FOREIGN KEY ([FacilityTypeID]) REFERENCES FacilityType([FacilityTypeID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+ALTER TABLE
+    [Facility]
+ADD
+    FOREIGN KEY ([AddressID]) REFERENCES Address([AddressID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+ALTER TABLE
+    [Facility]
+ADD
+    FOREIGN KEY ([TelephoneID]) REFERENCES Telephone([TelephoneID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+ALTER TABLE
+    [Facility]
+ADD
+    FOREIGN KEY ([EmailID]) REFERENCES Email([EmailID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+ALTER TABLE
+    [Facility]
+ADD
+    FOREIGN KEY ([EmergencyContactID]) REFERENCES EmergencyContact([EmergencyContactID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
