@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS dbo.FacilityType;
-
 CREATE TABLE BloodDonationDB.dbo.FacilityType
 (
     [FacilityTypeID] SMALLINT NOT NULL IDENTITY,
