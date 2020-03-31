@@ -1,0 +1,7 @@
+CREATE TABLE BloodDonationDB.dbo.Email
+(
+    [EmailID] BIGINT NOT NULL IDENTITY ,
+    [Email] VARCHAR(50) NOT NULL ,
+    [TimeStamp] DATETIME2(0) NOT NULL DEFAULT GETDATE() ,
+    PRIMARY KEY ([EmailID])
+);
