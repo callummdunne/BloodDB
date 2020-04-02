@@ -1,0 +1,20 @@
+CREATE TABLE  BloodDonationDB.dbo.PersonArchive(
+[PersonID] BIGINT NOT NULL,
+[SA_ID_Number] CHAR(13) NULL,
+[PassportNumber] BIGINT NULL,
+[CountryOfResidence] VARCHAR(50) NOT NULL,
+[HIV_Status] BINARY(1) NOT NULL DEFAULT 0,
+[FirstName] VARCHAR(50) NOT NULL,
+[MiddleName] VARCHAR(50) NULL,
+[LastName] VARCHAR(50) NOT NULL,
+[Title] VARCHAR(6) NOT NULL,
+[Gender] VARCHAR(6) NOT NULL,
+[DoB] DATETIME2 NOT NULL,
+[TelephoneID] BIGINT NOT NULL,
+[EmailID] BIGINT NOT NULL,
+[AddressID] BIGINT NOT NULL,
+[EmergencyContactID] BIGINT NOT NULL,
+[BloodTypeID] BIGINT NOT NULL,
+[TimeStamp]  DATETIME2 NOT NULL DEFAULT GETDATE(),
+PRIMARY KEY ([PersonID])
+);
