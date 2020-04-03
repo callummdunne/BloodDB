@@ -1,0 +1,9 @@
+CREATE TABLE BloodDonationDB.dbo.TestResult(
+[TestResultID] BIGINT IDENTITY(1,1) NOT NULL,
+[InventoryID] BIGINT NOT NULL,
+[TestID] SMALLINT NOT NULL,
+[DateTested] DATETIME2 NOT NULL,
+[TestResultDescription] VARCHAR(50) NOT NULL,
+[TimeStamp] DATETIME2 NOT NULL DEFAULT GETDATE(),
+PRIMARY KEY ([TestResultID])
+);
