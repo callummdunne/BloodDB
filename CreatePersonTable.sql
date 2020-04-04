@@ -15,7 +15,7 @@ CREATE TABLE  BloodDonationDB.dbo.Person(
 [EmailID] BIGINT NOT NULL,
 [AddressID] BIGINT NOT NULL,
 [EmergencyContactID] BIGINT NOT NULL,
-[BloodTypeID] BIGINT NOT NULL,
+[BloodTypeID] SMALLINT NOT NULL,
 [TimeStamp]  DATETIME2 NOT NULL DEFAULT GETDATE(),
 PRIMARY KEY ([PersonID])
 );
