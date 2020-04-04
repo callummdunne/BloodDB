@@ -23,7 +23,7 @@ FOREIGN KEY ([BloodTypeID]) REFERENCES BloodType([BloodTypeID]) ON DELETE NO ACT
 --Staff Table
 ALTER TABLE [Staff]
 ADD
-FOREIGN KEY ([DonationBranchID]) REFERENCES DonationBranch([DonationBranchID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+FOREIGN KEY ([DonationBranchID]) REFERENCES Facility([FacilityID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 
 ALTER TABLE [Staff]
@@ -34,7 +34,7 @@ FOREIGN KEY ([PersonID]) REFERENCES Person([PersonID]) ON DELETE NO ACTION ON UP
 --Staff Archive Table
 ALTER TABLE [StaffArchive]
 ADD
-FOREIGN KEY ([PersonArchiveID]) REFERENCES PersonArchive([PersonArchiveID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+FOREIGN KEY ([PersonArchiveID]) REFERENCES PersonArchive([PersonID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 
 --Donor Table

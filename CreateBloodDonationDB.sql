@@ -11,12 +11,13 @@ GO
 USE BloodDonationDB
 GO
 
-:SETVAR path "C:\Users\bbdnet2162\Documents\Database Levelup\BloodDB\BloodDB"
+:SETVAR path ".\"
+
+--:SETVAR path "C:\Users\bbdnet2162\Documents\Database Levelup\BloodDB\BloodDB"
 
 print '---------Created Database---------'
 
 --create all tables
-
 
 :r $(path)\CreateBloodTypeTable.sql
 
@@ -95,6 +96,22 @@ print 'created Address table'
 
 print 'created Email table'
 
+:r $(path)/CreateOrderArchiveTable.sql
+
+print 'created OrderArchive table' 
+
+:r $(path)/CreateOrderItemArchiveTable.sql
+
+print 'created OrderItemArchive tabl'
+
+:r $(path)/CreatePersonArchiveTable.sql
+
+print 'created PersonArchive table'
+
+:r $(path)/CreateStaffArchiveTable.sql
+
+print 'created StaffArchive table'
+
 
 print '---------created all tables---------' 
 
@@ -113,10 +130,3 @@ print 'foreign keys for facility complete'
 
 print 'foreign keys for person done'
 
-
-
-
-
---ALTER TABLE [dbo].[Actors]  WITH CHECK ADD  CONSTRAINT [FK_Actors_Movies] FOREIGN KEY([MovieID])
---REFERENCES [dbo].[Movies] ([MovieID])
---GO
