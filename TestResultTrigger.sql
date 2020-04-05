@@ -9,3 +9,4 @@ SET
 FROM
     [TestResult] t
     INNER JOIN [inserted] i ON t.TestResultID = i.TestResultID;
+GO

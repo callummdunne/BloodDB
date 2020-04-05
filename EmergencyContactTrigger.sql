@@ -9,3 +9,4 @@ SET
 FROM
     [EmergencyContact] ec
     INNER JOIN [inserted] i ON ec.EmergencyContactID = i.EmergencyContactID;
+GO

@@ -9,3 +9,4 @@ SET
 FROM
     [UnusedInventory] t
     INNER JOIN [inserted] i ON t.UnusedInventoryID = i.UnusedInventoryID;
+GO

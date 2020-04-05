@@ -9,3 +9,4 @@ SET
 FROM
     [Facility] f
     INNER JOIN [inserted] i ON f.FacilityID = i.FacilityID
+GO

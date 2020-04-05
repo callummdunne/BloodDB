@@ -9,3 +9,4 @@ SET
 FROM
     [Email] e
     INNER JOIN [inserted] i ON e.EmailID = i.EmailID;
+GO

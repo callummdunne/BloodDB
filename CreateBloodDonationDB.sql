@@ -63,7 +63,6 @@ print 'created test result table'
 
 print 'created test table'
 
-
 :r $(path)/CreateUnusedInventoryTbl.sql
 
 print 'created UnusedInventory table'
@@ -112,6 +111,11 @@ print 'created PersonArchive table'
 
 print 'created StaffArchive table'
 
+:r $(path)/CreateDonorArchiveTable.sql
+
+print 'created DonorArchive table'
+
+GO
 
 print '---------created all tables---------' 
 
@@ -141,3 +145,72 @@ print 'foreign keys for Emergency contact'
 
 print '---------foreign keys done---------'
 
+GO
+
+:r $(path)/DonorTableTrigger.sql
+
+print 'Donor table trigger'
+GO
+
+:r $(path)/EmailTrigger.sql
+
+print 'Email trigger' 
+GO
+
+:r $(path)/EmergencyContactTrigger.sql
+
+print 'Emergency contact Trigger'
+GO
+
+:r $(path)/FacilityTrigger.sql
+
+print 'Facility trigger'
+GO
+
+:r $(path)/OrderItemTrigger.sql
+
+print 'OrderItem trigger'
+GO
+
+:r $(path)/OrderPlacedTrigger.sql
+
+print 'OrderPlace trigger' 
+GO
+
+:r $(path)/OrderStatusTrigger.sql
+
+print 'OrderStatus trigger'
+GO
+
+:r $(path)/PersonTableTriggers.sql
+
+print 'Person trigger'
+GO
+
+:r $(path)/ShipmentTrigger.sql
+
+print 'Shipment trigger' 
+GO
+
+:r $(path)/StaffTableTriggers.sql
+
+print 'Staff trigger' 
+GO
+
+:r $(path)/TelephoneTrigger.sql
+
+print 'Telephone trigger' 
+GO
+
+:r $(path)/TestResultTrigger.sql
+
+print 'TestResult trigger' 
+GO
+
+:r $(path)/UnusedInventoryTrigger.sql
+
+print 'UnusedInvetory trigger'
+GO
+
+
+print '---------Triggers Done---------'
