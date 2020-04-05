@@ -1,6 +1,6 @@
 CREATE TABLE BloodDonationDB.dbo.BloodType(
-[BloodTypeID] [SMALLINT] IDENTITY(1,1) NOT NULL,
-[BloodTypeName] [varchar] NOT NULL,
-[Description] [varchar] NULL,
+[BloodTypeID] BIGINT IDENTITY(1,1) NOT NULL,
+[BloodTypeName] VARCHAR(50) NOT NULL,
+[Description] VARCHAR(100) NULL,
 PRIMARY KEY ([BloodTypeID])
 );
