@@ -8,6 +8,7 @@ CREATE TABLE  BloodDonationDB.dbo.PersonArchive(
 [MiddleName] VARCHAR(50) NULL,
 [LastName] VARCHAR(50) NOT NULL,
 [Title] VARCHAR(6) NOT NULL,
+[Sex] CHAR(1) NOT NULL,
 [Gender] VARCHAR(6) NOT NULL,
 [DoB] DATETIME2 NOT NULL,
 [TelephoneID] BIGINT NOT NULL,
