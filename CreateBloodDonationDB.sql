@@ -13,7 +13,7 @@ GO
 
 :SETVAR path ".\"
 
---:SETVAR path "C:\Users\bbdnet2162\Documents\Database Levelup\BloodDB\BloodDB"
+
 
 print '---------Created Database---------'
 
@@ -214,3 +214,10 @@ GO
 
 
 print '---------Triggers Done---------'
+GO
+
+:r $(path)/ArchiveDonorProcedure.sql
+
+print 'added donor archive procedure'
+
+print '---------Procedures Done---------'
