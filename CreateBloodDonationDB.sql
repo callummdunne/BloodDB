@@ -130,3 +130,14 @@ print 'foreign keys for facility complete'
 
 print 'foreign keys for person done'
 
+:r $(path)/InventoryTableForeignKeys.sql
+
+print 'foreign keys for inventory done'
+
+:r $(path)/EmergencyContactForeignKey.sql
+
+print 'foreign keys for Emergency contact'
+
+
+print '---------foreign keys done---------'
+
