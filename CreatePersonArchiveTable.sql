@@ -3,7 +3,7 @@ CREATE TABLE  BloodDonationDB.dbo.PersonArchive(
 [SA_ID_Number] CHAR(13) NULL,
 [PassportNumber] BIGINT NULL,
 [CountryOfResidence] VARCHAR(50) NOT NULL,
-[HIV_Status] BINARY(1) NOT NULL DEFAULT 0,
+[HIV_Status] BIT NOT NULL DEFAULT 0,
 [FirstName] VARCHAR(50) NOT NULL,
 [MiddleName] VARCHAR(50) NULL,
 [LastName] VARCHAR(50) NOT NULL,
