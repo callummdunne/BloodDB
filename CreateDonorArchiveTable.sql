@@ -1,0 +1,8 @@
+CREATE TABLE  BloodDonationDB.dbo.DonorArchive(
+[DonorID] BIGINT NOT NULL,
+[PersonID] BIGINT NOT NULL,
+[TestResultID] BIGINT NOT NULL,
+[LastDateDonated] DATETIME2 NULL,
+[TimeStamp] DATETIME2 NOT NULL DEFAULT GETDATE(),
+PRIMARY KEY ([DonorID])
+)
