@@ -1,1 +1,1 @@
-sqlcmd -S ServerName-i CreateBloodDonationDB.sql
+sqlcmd -S ServerName -i CreateBloodDonationDB.sql
