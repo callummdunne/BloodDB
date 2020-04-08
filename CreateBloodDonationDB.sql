@@ -196,8 +196,14 @@ GO
 print '---------Triggers Done---------'
 GO
 
-:r $(path)/ArchiveDonorProcedure.sql
-
-print 'added donor archive procedure'
 
 print '---------Procedures Done---------'
+GO
+
+:r $(path)/FacilityDonationFunction.sql
+
+print 'added FacilityDonationFunction' 
+GO
+
+print '---------Functions Done---------'
+GO
