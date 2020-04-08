@@ -192,10 +192,19 @@ GO
 print 'UnusedInvetory trigger'
 GO
 
-
 print '---------Triggers Done---------'
 GO
 
+:r $(path)/UsableInventoryView.sql
+print 'added usable inventory view' 
+
+print '---------Views Done---------'
+GO
+
+:r $(path)/UpdateInventoryStatusProcedure.sql
+
+print ' added inventory status procedure'
+GO 
 
 print '---------Procedures Done---------'
 GO
