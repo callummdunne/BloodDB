@@ -4,7 +4,7 @@ AS
 DELETE FROM 
 	OrderPlaced
 WHERE 
-	YEAR(DateDelivered) = DATEADD(YEAR,-@Years,YEAR(GETDATE())) --If expecting deleivery within @days amount of days
+	YEAR(DateDelivered) <= DATEADD(YEAR,-@Years,YEAR(GETDATE())) --If expecting deleivery within @days amount of days
 AND
-	OrderStatusID = 6
+	OrderStatusID = (SELECT OrderStatusID FROM OrderStatus WHERE Description LIKE 'Completed') 
 GO 
