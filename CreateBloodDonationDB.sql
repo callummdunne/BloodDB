@@ -237,6 +237,17 @@ GO
 print 'added FacilityInventory view'
 GO
 
+:r $(path)/LastDonationDateView.sql
+print 'added LastDonationDate view'
+GO
+
+:r $(path)/OrdersView.sql
+print 'added Orders View'
+GO
+
+:r $(path)/DetailedOrdersView.sql
+GO
+print 'added DetailedOrders view'
 print '---------Views Done---------'
 GO
 
@@ -249,6 +260,7 @@ print 'added findPreviousDonors procedure'
 GO 
 
 
+
 print '---------Procedures Done---------'
 GO
 
@@ -256,6 +268,25 @@ GO
 
 print 'added FacilityDonationFunction' 
 GO
+
+:r $(path)/UDFCountInventoryStatus.sql
+GO
+print 'added UDF Count Inventory status Function'
+GO
+
+:r $(path)/DeleteOrderCancelled.sql
+print 'added Delete Order Cancelled'
+GO 
+
+:r $(path)/DeleteOrderPlaced.sql
+print 'added DeleteOrderPlaced procedure'
+GO 
+
+:r $(path)/SearchForNumberOfOrdersByDonorNameFunction.sql
+GO
+print 'added SearchForNumberOfOrdersByDonorName function'
+GO
+
 
 print '---------Functions Done---------'
 GO
