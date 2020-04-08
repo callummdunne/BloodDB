@@ -31,12 +31,6 @@ ADD
 FOREIGN KEY ([PersonID]) REFERENCES Person([PersonID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 
---Staff Archive Table
-ALTER TABLE [StaffArchive]
-ADD
-FOREIGN KEY ([PersonArchiveID]) REFERENCES PersonArchive([PersonID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
-
 --Donor Table
 ALTER TABLE [Donor]
 ADD

@@ -95,26 +95,6 @@ print 'created Address table'
 
 print 'created Email table'
 
-:r $(path)/CreateOrderArchiveTable.sql
-
-print 'created OrderArchive table' 
-
-:r $(path)/CreateOrderItemArchiveTable.sql
-
-print 'created OrderItemArchive tabl'
-
-:r $(path)/CreatePersonArchiveTable.sql
-
-print 'created PersonArchive table'
-
-:r $(path)/CreateStaffArchiveTable.sql
-
-print 'created StaffArchive table'
-
-:r $(path)/CreateDonorArchiveTable.sql
-
-print 'created DonorArchive table'
-
 GO
 
 print '---------created all tables---------' 
