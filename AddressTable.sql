@@ -1,8 +1,8 @@
 CREATE TABLE BloodDonationDB.dbo.Address
 (
     [AddressID] BIGINT NOT NULL IDENTITY,
-    [ComplexName] VARCHAR(50) NOT NULL,
-    [UnitNumber] SMALLINT NOT NULL,
+    [ComplexName] VARCHAR(50),
+    [UnitNumber] SMALLINT,
     [StreetName] VARCHAR(50) NOT NULL,
     [StreetNumber] SMALLINT NOT NULL,
     [Suburb] VARCHAR(50) NOT NULL,
