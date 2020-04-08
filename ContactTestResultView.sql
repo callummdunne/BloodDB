@@ -1,4 +1,4 @@
-CREATE VIEW Contact_TestResult
+CREATE VIEW ContactTestResultView
 AS
 SELECT p.FirstName, t.Description AS TestDescription, tr.TestResultDescription , c.Cellphone
 from Test t
