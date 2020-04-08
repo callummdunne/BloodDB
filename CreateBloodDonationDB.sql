@@ -203,7 +203,23 @@ GO
 
 :r $(path)/UsableInventoryView.sql
 print 'added usable inventory view' 
+GO
 
+:r $(path)/FacilityInfoView.sql
+print 'added FacilityInfo view'
+GO
+
+:r $(path)/StaffFacilityView.sql
+print 'added StaffFacility view'
+GO
+
+:r $(path)/StaffJobTitleView.sql
+print 'added StaffJobTitle view'
+GO
+
+:r $(path)/CountSameBloodTypeView.sql
+print 'added CountSameBloodType view'
+GO
 print '---------Views Done---------'
 GO
 
