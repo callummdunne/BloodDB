@@ -127,6 +127,12 @@ print '---------foreign keys done---------'
 
 GO
 
+
+
+:r $(path)/InsertScript.sql
+print '---------Inserts Done---------'
+GO
+
 :r $(path)/DonorTableTrigger.sql
 
 print 'Donor table trigger'
