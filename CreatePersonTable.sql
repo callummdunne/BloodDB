@@ -1,8 +1,8 @@
 CREATE TABLE  BloodDonationDB.dbo.Person(
 [PersonID] BIGINT IDENTITY(1,1) NOT NULL,
-[SA_ID_Number] CHAR(13) NULL,
-[PassportNumber] BIGINT NULL,
-[CountryOfResidence] VARCHAR(50) NOT NULL,
+[ID_Type] VARCHAR(50) NOT NULL,
+[ID_Number] VARCHAR(50) NOT NULL,
+[CountryOfBirth] VARCHAR(50) NOT NULL,
 [HIV_Status] BIT NOT NULL DEFAULT 0,
 [FirstName] VARCHAR(50) NOT NULL,
 [MiddleName] VARCHAR(50) NULL,
