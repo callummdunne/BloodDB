@@ -220,13 +220,34 @@ GO
 :r $(path)/CountSameBloodTypeView.sql
 print 'added CountSameBloodType view'
 GO
+
+:r $(path)/ImportantOrdersView.sql
+print 'added ImportantOrders View' 
+GO
+
+:r $(path)/OrdersOutstandingView.sql
+print 'added OrdersOutstanding view'
+GO
+
+:r $(path)/ContactTestResultView.sql
+print 'added ContactTestResult view' 
+GO
+
+:r $(path)/FacilityInventoryView.sql
+print 'added FacilityInventory view'
+GO
+
 print '---------Views Done---------'
 GO
 
 :r $(path)/UpdateInventoryStatusProcedure.sql
-
-print ' added inventory status procedure'
+print 'added inventory status procedure'
 GO 
+
+:r $(path)/FindPreviousDonorsProcedure.sql
+print 'added findPreviousDonors procedure'
+GO 
+
 
 print '---------Procedures Done---------'
 GO
