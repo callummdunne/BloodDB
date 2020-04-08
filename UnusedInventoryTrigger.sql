@@ -1,12 +1,12 @@
-CREATE TRIGGER UnusedInventoryTimeStampUpdate ON [UnusedInventory]
+CREATE TRIGGER UnusedInventoryTimeStampUpdate ON [InventoryStatus]
 AFTER
 UPDATE
     AS
 UPDATE
-    [UnusedInventory]
+    [InventoryStatus]
 SET
     [TimeStamp] = GETDATE()
 FROM
-    [UnusedInventory] t
-    INNER JOIN [inserted] i ON t.UnusedInventoryID = i.UnusedInventoryID;
+    [InventoryStatus] t
+    INNER JOIN [inserted] i ON t.InventoryStatusID = i.InventoryStatusID;
 GO

@@ -63,7 +63,7 @@ print 'created test result table'
 
 print 'created test table'
 
-:r $(path)/CreateUnusedInventoryTbl.sql
+:r $(path)/CreateInventoryStatusTbl.sql
 
 print 'created UnusedInventory table'
 
